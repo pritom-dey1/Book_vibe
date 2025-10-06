@@ -7,7 +7,7 @@ import { useBook } from "../../context/BookContext";
 const CardDetails = () => {
   const { bookId } = useParams();
   const data = useLoaderData();
-  const { addToRead, addToWishlist } = useBook(); // 🟢 context function
+  const { addToRead, addToWishlist } = useBook(); 
 
   const SingleBook = data.find(
     (book) => String(book.bookId) === String(bookId)

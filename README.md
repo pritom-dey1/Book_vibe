@@ -70,3 +70,11 @@ Book_vibe/
 ├── vite.config.js
 ├── eslint.config.js
 └── README.md
+
+
+## Author
+
+Pritom Dey
+🔗 GitHub: <a href="https://github.com/pritom-dey1/">Pritom Dey</a>
+
+📧 Email: Pritom1.2.zx@gmail.com

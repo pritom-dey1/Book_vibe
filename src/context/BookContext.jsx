@@ -14,7 +14,6 @@ export const BookProvider = ({ children }) => {
       return;
     }
 
-    // যদি Wishlist এ থাকে, সেখান থেকেও সরানো যায় চাইলে (optional)
     setWishlist((prev) => prev.filter((b) => b.bookId !== book.bookId));
 
     setReadBooks((prev) => [...prev, book]);
