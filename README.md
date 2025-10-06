@@ -1,16 +1,72 @@
-# React + Vite
+# 📚 Book Vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern and interactive React + Vite web application that lets users explore books, add them to a wishlist, and track what they’ve read — all in a smooth, context-powered UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Overview
 
-## React Compiler
+**Book Vibe** is a React-based frontend project built with **Vite**, **React Router**, and **Context API**.  
+It allows users to browse books, view detailed information, and manage personalized lists such as “Read Books” and “Wishlist.”  
+Interactive notifications are implemented using **React Toastify** for a seamless user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📖 Browse a list of books (loaded from `booksData.json`)
+- 💾 Add books to **Read List**
+- 💙 Add books to **Wishlist**
+- 🔄 Move books from Wishlist to Read List
+- ⚡ Instant feedback using toast notifications
+- 🧭 Nested routing with **React Router**
+- 💅 Clean, modular, and scalable component structure
+
+---
+
+## 🧩 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Framework | [React](https://reactjs.org/) |
+| Build Tool | [Vite](https://vitejs.dev/) |
+| Routing | [React Router](https://reactrouter.com/) |
+| State Management | React Context API |
+| Notifications | [React Toastify](https://fkhadra.github.io/react-toastify/introduction) |
+| Language | JavaScript (ES6+) |
+| Styling | TAILWINDCSS |
+| Package Manager | npm |
+
+---
+
+## 🗂 Folder Structure
+
+```plaintext
+Book_vibe/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Banner/
+│   │   ├── Books/
+│   │   ├── Buttons/
+│   │   ├── Card/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── ListedPageComponent/
+│   │   └── Tags/
+│   ├── context/
+│   │   └── BookContext.jsx
+│   ├── Pages/
+│   │   ├── CardDetails/
+│   │   ├── Error/
+│   │   ├── ListedBook/
+│   │   └── Root/
+│   ├── Routes/
+│   │   └── Routes.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   └── booksData.json
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
